@@ -1,38 +1,95 @@
-.App {
+/* General Container */
+.payment-container {
+  color: white;
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #004400;
+  border-radius: 10px;
+}
+
+/* Heading */
+h2, h3 {
   text-align: center;
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Input Styling */
+.email-input,
+input[type="time"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.email-input {
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Buttons */
+.pay-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #006600;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-button:hover {
+  background-color: #004400;
+}
+
+/* Error Messages */
+.error-message {
+  color: red;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner img {
+  width: 30px;
+}
+
+/* Checkbox Group Styling */
+.checkbox-group {
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
+}
+
+.checkbox-group label {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Select Box and Time Fields */
+.service-selection,
+.time-selection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service-selection label,
+.time-selection label {
+  margin-bottom: 5px;
+}
+
+/* Additional Charges Section */
+.additional-charges {
+  margin-bottom: 15px;
 }
